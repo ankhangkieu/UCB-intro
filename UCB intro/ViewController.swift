@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        UCBinfo.layer.cornerRadius = 5.0
+        UCBphoto.layer.cornerRadius = 5.0
     }
 
     override func didReceiveMemoryWarning() {

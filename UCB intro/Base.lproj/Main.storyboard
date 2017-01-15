@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -168,7 +169,78 @@
                     <view key="view" contentMode="scaleToFill" id="Bry-b9-A4N">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UCB1" translatesAutoresizingMaskIntoConstraints="NO" id="Vua-Xh-DUe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="gr0-Vw-ZEq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY3-9r-rhH">
+                                <rect key="frame" x="35" y="20" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Hj-rm-A09"/>
+                                    <constraint firstAttribute="width" constant="34" id="ANK-73-WQd"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="5A3-XY-6LB"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pxh-9G-39S">
+                                <rect key="frame" x="20" y="223" width="560" height="190"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c1t-Qb-82r">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Students:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scB-VZ-1Nr">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="35,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vj-XO-YsY">
+                                                <rect key="frame" x="0.0" y="34" width="55" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o46-0c-bYX">
+                                        <rect key="frame" x="0.0" y="75" width="547" height="116"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Overview:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxt-i7-bfS">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1L-tL-5uF">
+                                                <rect key="frame" x="0.0" y="34" width="547" height="82"/>
+                                                <string key="text">The University of California was founded in 1868, born out of a vision in the State Constitution of a university that would "contribute even more than California's gold to the glory and happiness of advancing generations."</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pxh-9G-39S" secondAttribute="trailing" id="4Gt-lL-4sU"/>
+                            <constraint firstAttribute="trailing" secondItem="Vua-Xh-DUe" secondAttribute="trailing" id="9v2-BQ-4tH"/>
+                            <constraint firstItem="aY3-9r-rhH" firstAttribute="leading" secondItem="Bry-b9-A4N" secondAttribute="leadingMargin" constant="15" id="CAs-DQ-9IO"/>
+                            <constraint firstItem="Vua-Xh-DUe" firstAttribute="leading" secondItem="Bry-b9-A4N" secondAttribute="leading" id="OLc-Ai-6f7"/>
+                            <constraint firstItem="Pxh-9G-39S" firstAttribute="top" secondItem="Vua-Xh-DUe" secondAttribute="bottom" constant="50" id="SCt-DL-ahz"/>
+                            <constraint firstItem="aY3-9r-rhH" firstAttribute="top" secondItem="EAe-hq-D6w" secondAttribute="bottom" id="gEN-aV-Upo"/>
+                            <constraint firstItem="Vua-Xh-DUe" firstAttribute="top" secondItem="Bry-b9-A4N" secondAttribute="top" id="nw0-9C-abW"/>
+                            <constraint firstItem="Pxh-9G-39S" firstAttribute="leading" secondItem="Bry-b9-A4N" secondAttribute="leadingMargin" id="xCA-Vw-tdd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnF-KA-Xup" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -177,6 +249,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="UCB1" width="275" height="183"/>
         <image name="UCB2" width="262" height="193"/>
         <image name="UCBseal" width="270" height="250"/>
         <image name="compass" width="35" height="35"/>

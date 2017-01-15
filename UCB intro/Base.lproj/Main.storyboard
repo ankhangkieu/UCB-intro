@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB2" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-rz-fKK">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-Qt-vHr">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-Qt-vHr">
                                 <rect key="frame" x="14" y="28" width="572" height="210"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fD5-d3-HD2">
@@ -34,7 +34,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-9A-DiW">
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-9A-DiW">
                                         <rect key="frame" x="0.0" y="66" width="456" height="79"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z5v-7j-0R2">
@@ -78,18 +78,62 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kzz-cq-0cf">
+                                <rect key="frame" x="131" y="503" width="338" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6gb-LV-q24">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5z-x9-zjO">
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="About UC Berkeley">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="qOi-VD-c07" kind="show" id="5IB-5B-WYV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TgU-rv-hTz">
+                                        <rect key="frame" x="179" y="0.0" width="159" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McV-qB-pkM">
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Photos of UC Berkekey">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="RZw-5p-X4I" kind="show" id="tD3-DZ-GXl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="p2v-vV-czl"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ji4-Qt-vHr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5E6-cu-ekT"/>
+                            <constraint firstItem="kzz-cq-0cf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OqP-PS-bSy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kCb-rz-fKK" secondAttribute="bottom" id="PXK-xm-FhX"/>
                             <constraint firstItem="kCb-rz-fKK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZNp-JN-vht"/>
                             <constraint firstAttribute="trailing" secondItem="kCb-rz-fKK" secondAttribute="trailing" id="eIO-Iw-Iyk"/>
                             <constraint firstAttribute="trailing" secondItem="Ji4-Qt-vHr" secondAttribute="trailing" constant="14" id="iGj-rn-qUy"/>
                             <constraint firstItem="Ji4-Qt-vHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="qYw-e6-f9F"/>
                             <constraint firstItem="kCb-rz-fKK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v9T-Xv-4Jh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kzz-cq-0cf" secondAttribute="bottom" constant="50" id="vQn-fv-p2G"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="UCBinfo" destination="t5z-x9-zjO" id="1J6-GE-b2C"/>
+                        <outlet property="UCBphoto" destination="McV-qB-pkM" id="wPs-z2-iCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

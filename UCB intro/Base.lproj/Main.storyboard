@@ -16,16 +16,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB2" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-rz-fKK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UCBseal" translatesAutoresizingMaskIntoConstraints="NO" id="ud1-QS-vdC">
+                                <rect key="frame" x="20" y="11" width="82" height="82"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNIVERSITY OF CALIFORNIA BERKELEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2p4-LB-CWI">
+                                <rect key="frame" x="110" y="11" width="402" height="82"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kCb-rz-fKK" secondAttribute="bottom" id="PXK-xm-FhX"/>
+                            <constraint firstItem="kCb-rz-fKK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZNp-JN-vht"/>
+                            <constraint firstAttribute="trailing" secondItem="kCb-rz-fKK" secondAttribute="trailing" id="eIO-Iw-Iyk"/>
+                            <constraint firstItem="kCb-rz-fKK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v9T-Xv-4Jh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="445" y="-293"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="XbU-1k-wtd">
             <objects>
-                <viewController id="RZw-5p-X4I" sceneMemberID="viewController">
+                <viewController id="RZw-5p-X4I" customClass="PhotoViewController" customModule="UCB_intro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n0o-Df-0l4"/>
                         <viewControllerLayoutGuide type="bottom" id="27A-yk-NUB"/>
@@ -38,12 +59,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sj0-kg-OTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="307" y="1090"/>
+            <point key="canvasLocation" x="445" y="420"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="VYE-pm-NZi">
             <objects>
-                <viewController id="qOi-VD-c07" sceneMemberID="viewController">
+                <viewController id="qOi-VD-c07" customClass="InfoViewController" customModule="UCB_intro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EAe-hq-D6w"/>
                         <viewControllerLayoutGuide type="bottom" id="ZLe-V4-ol7"/>
@@ -56,7 +77,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnF-KA-Xup" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="399"/>
+            <point key="canvasLocation" x="1173" y="-293"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UCB2" width="262" height="193"/>
+        <image name="UCBseal" width="270" height="250"/>
+    </resources>
 </document>

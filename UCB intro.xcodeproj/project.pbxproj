@@ -13,6 +13,8 @@
 		0590B5141E2B88D6004DA3BA /* UCB_intro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0590B5121E2B88D6004DA3BA /* UCB_intro.xcdatamodeld */; };
 		0590B5161E2B88D6004DA3BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0590B5151E2B88D6004DA3BA /* Assets.xcassets */; };
 		0590B5191E2B88D6004DA3BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0590B5171E2B88D6004DA3BA /* LaunchScreen.storyboard */; };
+		0590B5221E2B8C68004DA3BA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B5211E2B8C68004DA3BA /* InfoViewController.swift */; };
+		0590B5241E2B8C75004DA3BA /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590B5231E2B8C75004DA3BA /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0590B5151E2B88D6004DA3BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0590B5181E2B88D6004DA3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0590B51A1E2B88D6004DA3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0590B5211E2B8C68004DA3BA /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		0590B5231E2B8C75004DA3BA /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,8 @@
 		0590B50A1E2B88D6004DA3BA /* UCB intro */ = {
 			isa = PBXGroup;
 			children = (
+				0590B5201E2B8C40004DA3BA /* Controller */,
 				0590B50B1E2B88D6004DA3BA /* AppDelegate.swift */,
-				0590B50D1E2B88D6004DA3BA /* ViewController.swift */,
 				0590B50F1E2B88D6004DA3BA /* Main.storyboard */,
 				0590B5151E2B88D6004DA3BA /* Assets.xcassets */,
 				0590B5171E2B88D6004DA3BA /* LaunchScreen.storyboard */,
@@ -65,6 +69,16 @@
 				0590B5121E2B88D6004DA3BA /* UCB_intro.xcdatamodeld */,
 			);
 			path = "UCB intro";
+			sourceTree = "<group>";
+		};
+		0590B5201E2B8C40004DA3BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0590B50D1E2B88D6004DA3BA /* ViewController.swift */,
+				0590B5211E2B8C68004DA3BA /* InfoViewController.swift */,
+				0590B5231E2B8C75004DA3BA /* PhotoViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0590B5221E2B8C68004DA3BA /* InfoViewController.swift in Sources */,
 				0590B50E1E2B88D6004DA3BA /* ViewController.swift in Sources */,
 				0590B5141E2B88D6004DA3BA /* UCB_intro.xcdatamodeld in Sources */,
 				0590B50C1E2B88D6004DA3BA /* AppDelegate.swift in Sources */,
+				0590B5241E2B8C75004DA3BA /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

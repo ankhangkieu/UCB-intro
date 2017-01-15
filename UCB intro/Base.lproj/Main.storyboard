@@ -20,13 +20,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCB2" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-rz-fKK">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-Qt-vHr">
-                                <rect key="frame" x="14" y="28" width="572" height="150"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ji4-Qt-vHr">
+                                <rect key="frame" x="14" y="28" width="572" height="210"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fD5-d3-HD2">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fD5-d3-HD2">
                                         <rect key="frame" x="0.0" y="0.0" width="572" height="36"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#1 PUBLIC UNIVERSITY IN THE WORLD" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YH1-FF-65s">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1 PUBLIC UNIVERSITY IN THE WORLD" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YH1-FF-65s">
                                                 <rect key="frame" x="0.0" y="0.0" width="572" height="36"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,31 +34,41 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="6Oz-8U-fsv">
-                                        <rect key="frame" x="0.0" y="36" width="256" height="79"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yQ1-9A-DiW">
+                                        <rect key="frame" x="0.0" y="66" width="456" height="79"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="UCBseal" translatesAutoresizingMaskIntoConstraints="NO" id="ud1-QS-vdC">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z5v-7j-0R2">
                                                 <rect key="frame" x="0.0" y="0.0" width="82" height="79"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="79" id="O9m-xQ-xjz"/>
-                                                    <constraint firstAttribute="width" constant="82" id="j4E-nA-rDh"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UNIVERSITY OF CALIFORNIA BERKELEY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2p4-LB-CWI">
-                                                <rect key="frame" x="82" y="0.0" width="174" height="79"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
-                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UCBseal" translatesAutoresizingMaskIntoConstraints="NO" id="ud1-QS-vdC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="79"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="79" id="O9m-xQ-xjz"/>
+                                                            <constraint firstAttribute="width" constant="82" id="j4E-nA-rDh"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ik7-yj-T2J">
+                                                <rect key="frame" x="82" y="28" width="374" height="23"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNIVERSITY OF CALIFORNIA BERKELEY" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2p4-LB-CWI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rwp-rH-Iwa">
-                                        <rect key="frame" x="0.0" y="115" width="150" height="35"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rwp-rH-Iwa">
+                                        <rect key="frame" x="0.0" y="175" width="150" height="35"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-5E-cmS">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="hzO-5E-cmS">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Berkeley, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-y3-8dX">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Berkeley, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-y3-8dX">
                                                 <rect key="frame" x="35" y="0.0" width="115" height="35"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,9 +81,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ji4-Qt-vHr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5E6-cu-ekT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kCb-rz-fKK" secondAttribute="bottom" id="PXK-xm-FhX"/>
                             <constraint firstItem="kCb-rz-fKK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZNp-JN-vht"/>
                             <constraint firstAttribute="trailing" secondItem="kCb-rz-fKK" secondAttribute="trailing" id="eIO-Iw-Iyk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ji4-Qt-vHr" secondAttribute="trailing" constant="14" id="iGj-rn-qUy"/>
+                            <constraint firstItem="Ji4-Qt-vHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="14" id="qYw-e6-f9F"/>
                             <constraint firstItem="kCb-rz-fKK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v9T-Xv-4Jh"/>
                         </constraints>
                     </view>

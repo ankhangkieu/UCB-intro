@@ -22,6 +22,9 @@ class PhotoViewController: UIViewController {
     }
     
 
+    @IBAction func backPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
